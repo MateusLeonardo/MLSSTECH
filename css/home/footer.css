@@ -1,0 +1,46 @@
+.footer-bg {
+  background: var(--var-p10);
+  padding-top: 30px;
+}
+.footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px 0px;
+}
+.redes-sociais h3,
+.contato h3 {
+  padding-bottom: 25px;
+  font-size: 1.7rem;
+  color: var(--var-p0);
+}
+.icones-redes {
+  display: flex;
+  gap: 25px;
+}
+.icones-redes img {
+  width: 50px;
+}
+.contato-redes li {
+  padding-bottom: 10px;
+  font-size: 1.2rem;
+  color: #a8a8a8
+}
+.contato-redes li:nth-child(2) {
+  padding-bottom: 20px;
+}
+.footer p {
+  color:#a8a8a8;
+  font-size: 1.2rem;
+  grid-column: 1/-1;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    grid-template-columns: 1fr;
+    gap: 40px 0px;
+  }
+}

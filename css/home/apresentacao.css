@@ -1,0 +1,76 @@
+.apresentacao {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px 0px 20px;
+}
+.apresentacao-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.apresentacao-texto span {
+  color: var(--var-p5);
+}
+.conceitos {
+  display: block;
+  padding-bottom: 4px;
+}
+.apresentacao-texto h3 {
+  color: var(--var-p13);
+  font-size: 2.2rem;
+  line-height: 1.2;
+  padding-bottom: 20px;
+}
+.apresentacao-beneficios {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.beneficios h4 {
+  padding-bottom: 10px;
+  color: var(--var-p10);
+  position: relative;
+}
+.beneficios h4::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-image: url("../../img/icons/check-circle-svgrepo-com.svg");
+  background-size: cover;
+  left: -35px;
+  top: -5px;
+}
+.beneficios p {
+  padding-bottom: 25px;
+}
+
+@media (max-width: 800px) {
+  .apresentacao-texto h3 {
+    margin-bottom: 15px;
+  }
+  .apresentacao-img {
+    grid-row: 2;
+  }
+  .apresentacao-conteudo {
+    grid-template-columns: 1fr;
+  }
+  .apresentacao-conteudo h3 {
+    padding-bottom: 30px;
+  }
+  .beneficios h4::before {
+    display: block;
+    left: 0px;
+    top: -30px;
+  }
+}
+@media (max-width: 425px) {
+  .apresentacao-texto h3 {
+    font-size: 1.5rem;
+    padding-bottom: 40px;
+  }
+  .apresentacao-beneficios {
+    grid-template-columns: 1fr;
+  }
+}

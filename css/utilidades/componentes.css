@@ -1,0 +1,53 @@
+.botao {
+  background-image: linear-gradient(
+    to right,
+    #00d2ff 0%,
+    #3a7bd5 51%,
+    #00d2ff 100%
+  );
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: var(--var-p13);
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  max-width: max-content;
+}
+.botao:hover {
+  background-position: right center;
+  text-decoration: none;
+}
+
+@media (max-width: 800px) {
+  .botao {
+    padding: 10px 30px;
+  }
+}
+
+
+.subtittle {
+  font-size: 2rem;
+  color: var(--var-p10);
+  padding-bottom: 25px;
+  position: relative;
+}
+.subtittle::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 5px;
+  background: var(--var-p5);
+  left: -25px;
+  top: 14px;
+}
+
+@media (max-width: 1200px) {
+  .subtittle::before {
+    display: none;
+  }
+}

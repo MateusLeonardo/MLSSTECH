@@ -1,0 +1,39 @@
+.header-bg {
+  background: var(--var-p6);
+}
+.header {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+.menu-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.menu-header a {
+  border-radius: 5px;
+  display: block;
+  color: #ffffff;
+  padding: 10px 15px;
+  font-size: 1.2rem;
+}
+.menu-header a:hover {
+  color: var(--var-p10);
+}
+
+@media (max-width: 600px) {
+  .header {
+    gap: 20px;
+  }
+}
+@media (max-width: 425px) {
+  .menu-header a {
+    padding: 20px 20px;
+    background: var(--var-p9);
+  }
+}

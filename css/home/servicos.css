@@ -1,0 +1,54 @@
+.servicos {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.tecnologias {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0px 40px;
+}
+.tec h3 {
+  color: var(--var-p6);
+  padding-bottom: 5px;
+  position: relative;
+}
+.tec p {
+  color: var(--var-p10);
+  margin-bottom: 40px;
+}
+.tec h3::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 2px;
+  height: 30px;
+  background: var(--var-p3);
+  left: -30px;
+  top: 15px;
+}
+.tec:first-child h3::before {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .tecnologias {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .tec:nth-child(odd) h3::before {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .tecnologias {
+    grid-template-columns: 1fr;
+  }
+  .tec h3::before {
+    display: none;
+  }
+  .tecnologias p {
+    margin-bottom: 0px;
+  }
+}

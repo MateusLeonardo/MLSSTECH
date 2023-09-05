@@ -1,0 +1,36 @@
+.numeros-tittle {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.numeros-tittle h2 {
+  padding-bottom: 40px;
+}
+.numeros {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px 50px;
+}
+.numeros h2 {
+  grid-column: 1/-1;
+}
+.numeros-mlss img {
+  width: 70px;
+}
+.numeros-mlss {
+  height: 370px;
+  width: 270px;
+  border: 1px solid #9fceff;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.numeros-mlss .numero {
+  font-size: 2rem;
+  color: var(--var-p11);
+}
+.numeros-mlss .pais {
+  font-size: 1.2rem;
+  color: var(--var-p9);
+}

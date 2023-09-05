@@ -1,0 +1,24 @@
+.r400 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+.r700 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+.fs400 {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+}
+.fs700 {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+}
+.fc400 {
+  font-family: "Fira Code", monospace;
+  font-weight: 400;
+}
+.fc700 {
+  font-family: "Fira Code", monospace;
+  font-weight: 700;
+}
