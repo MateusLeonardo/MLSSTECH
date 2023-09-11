@@ -18,11 +18,12 @@
       <div class="header">
         <h2 class="fs700">MLSS</h2>
         <nav>
-          <ul class="menu-header r700">
+          <ul class="menu-header r700" data-menu="menu-nav">
             <li><a href="/">Home</a></li>
-            <li><a href="/">Serviços</a></li>
-            <li><a href="/">Sobre</a></li>
-            <li><a href="/">Projetos</a></li>
+            <li><a href="#quemSomos">Quem Somos</a></li>
+            <li><a href="#numeros">Números</a></li>
+            <li><a href="#parceiros">Parceiros</a></li>
+            <li><a href="#faq-lista">Perguntas</a></li>
           </ul>
         </nav>
       </div>
@@ -91,7 +92,7 @@
         </div>
       </div>
     </article>
-    <article class="apresentacao">
+    <article class="apresentacao" id="quemSomos">
       <h2 class="subtittle fs700">Quem somos ?</h2>
       <div class="apresentacao-conteudo">
         <div class="apresentacao-img">
@@ -127,7 +128,7 @@
         </div>
       </div>
     </article>
-    <article class="numeros-tittle">
+    <article class="numeros-tittle" id="numeros">
       <h2 class="subtittle fs700">Números da MLSSTech.</h2>
       <div class="numeros">
         <div class="numeros-mlss">
@@ -150,7 +151,7 @@
         </div>
       </div>
     </article>
-    <article class="parceiros">
+    <article class="parceiros" id="parceiros">
       <h2 class="subtittle fs700">Nossos parceiros.</h2>
       <div class="parceiros-img">
         <img src="./img/icons/ifood-43.svg" alt="" />
@@ -159,7 +160,7 @@
         <img src="./img/icons/mercado-livre.svg" alt="" />
       </div>
     </article>
-    <article class="faq-lista">
+    <article class="faq-lista" id="faq-lista">
       <h2 class="subtittle fs700">Perguntas frequentes</h2>
       <dl>
         <dt class="r700">O que é desenvolvimento web front-end na MLSSTech?</dt>
@@ -247,5 +248,6 @@
         <p class="r400">MLSSTech © Todos os direitos reservados.</p>
       </div>
     </footer>
+    <script src="./js/index.js"></script>
   </body>
 </html>
