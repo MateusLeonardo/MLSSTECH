@@ -3,37 +3,101 @@
 }
 .header {
   max-width: 1200px;
+  margin: 0 auto;
+  padding: 25px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
-  padding: 20px;
-}
-.menu-header {
-  display: flex;
   flex-wrap: wrap;
-  gap: 10px;
 }
-.menu-header a {
-  border-radius: 5px;
-  display: block;
-  color: #ffffff;
-  padding: 10px 15px;
-  font-size: 1.2rem;
+.header-menu {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3.5rem;
 }
-.menu-header a:hover {
-  color: var(--var-p10);
+.header-menu a {
+  font-size: 1.5rem;
+  position: relative;
+  display: inline-block;
 }
 
-@media (max-width: 600px) {
-  .header {
-    gap: 20px;
-  }
+.header-menu a:after,
+.header-menu a:hover:after {
+  content: "";
+  width: 0;
+  height: 3px;
+  margin-top: 4px;
+  display: block;
+  position: absolute;
+  transition: 0.3s;
+  background: #fff;
+  border-radius: 2px;
 }
-@media (max-width: 425px) {
-  .menu-header a {
-    padding: 20px 20px;
-    background: var(--var-p9);
+.header-menu a.ativo:after,
+.header-menu a:hover:after {
+  width: 100%;
+}
+
+.menu-mobile {
+  padding: 1rem;
+  display: none;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+.menu-mobile .bar {
+  width: 30px;
+  height: 4px;
+  background: #000;
+  margin-top: 4px;
+  transition: all 0.3s ease;
+}
+.menu-mobile-sobre .bar,
+.menu-mobile-contato .bar {
+  background: #0093d4;
+}
+
+@media (max-width: 1024px) {
+  .header-menu a {
+    padding: 0.5rem 1.2rem;
+  }
+  .header-menu {
+    flex-direction: column;
+    gap: 2.2rem;
+    position: fixed;
+    right: -100%;
+    padding: 6rem 1rem;
+    background: var(--var-p6);
+    height: 100vh;
+    top: 0;
+    width: 70%;
+    transition: all 0.6s ease;
+    z-index: 900;
+  }
+  .nav-menu.ativo .menu-mobile .bar:nth-child(2) {
+    display: none;
+  }
+
+  .nav-menu.ativo .menu-mobile .bar:first-child {
+    transform: rotate(45deg) translate(3px, 5px);
+  }
+  .nav-menu.ativo .menu-mobile .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(0px, -4px);
+  }
+  .nav-menu.ativo .header-menu {
+    right: 0;
+  }
+  .menu-mobile {
+    display: block;
+    position: fixed;
+    top: 8px;
+    right: 20px;
+    z-index: 1000;
+  }
+
+  .header-menu a:after,
+  .header-menu a:hover:after {
+    left: 0;
   }
 }

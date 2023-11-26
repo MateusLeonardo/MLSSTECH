@@ -13,3 +13,13 @@ function initScrollSuave(e) {
 menuNav.forEach((link) => {
   link.addEventListener('click', initScrollSuave)
 })
+
+function menuMobile() {
+  const menuMobile = document.querySelector(".menu-mobile");
+  function toggleMenuMobile() {
+    const nav = document.querySelector(".nav-menu");
+    nav.classList.toggle("ativo");
+  }
+  menuMobile.addEventListener("click", toggleMenuMobile);
+}
+menuMobile();
