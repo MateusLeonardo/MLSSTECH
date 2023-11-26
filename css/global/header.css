@@ -88,9 +88,12 @@
   .nav-menu.ativo .header-menu {
     right: 0;
   }
+  .nav-menu.ativo .menu-mobile {
+    position: fixed;
+  }
   .menu-mobile {
     display: block;
-    position: fixed;
+    position: absolute;
     top: 8px;
     right: 20px;
     z-index: 1000;
